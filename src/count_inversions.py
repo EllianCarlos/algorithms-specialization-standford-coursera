@@ -12,7 +12,7 @@ def sort_and_count_inversions(a: list[int]) -> int:
   return (d, x + y + z)
 
 def merge_and_count_split_inv(b: list[int], c: list[int]) -> int: ## Inversion if i <= n/2 <= j
-  d = [0 for _ in range(len(b)+len(c))]
+  d = [0]* (len(b)+len(c))
   i = 0
   j = 0
 
